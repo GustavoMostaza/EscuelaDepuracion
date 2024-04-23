@@ -1,0 +1,58 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Estilos del menú lateral */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding-top: 60px; /* Altura de la cabecera */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+
+/* Estilos de la cabecera */
+.header {
+    flex: 1;
+    background-color: #666;
+    color: #fff;
+    padding: 20px;
+}
+
+.header ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Estilos del pie de página */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
