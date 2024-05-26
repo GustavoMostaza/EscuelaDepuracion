@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Reactivo</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <button id="showModalBtn">Mostrar</button>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div class="container">
+        <h1>Inicia o registrate:</h1>
+        <form id="userForm">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" required>
+          
+          <label for="numero">Número:</label>
+          <input type="number" id="numero" name="numero" required>
+          
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

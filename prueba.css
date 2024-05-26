@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.tarjeta {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+.tarjeta img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tarjeta h2 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.tarjeta p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.tarjeta .precio {
+    color: #00c;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}

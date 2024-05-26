@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas de Vuelos</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Estilos adicionales para tarjetas */
+        .tarjeta {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .tarjeta:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .tarjeta-img {
+            flex: 1 1 auto;
+        }
+        .tarjeta-contenido {
+            padding: 1rem;
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #f9fafb;
+        }
+        .boton-comprar {
+            align-self: center;
+            margin-top: auto;
+            background-color: #f9a8d4;
+            color: #fff;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .boton-comprar:hover {
+            background-color: #f7708f;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-8">
+
+<div id="vuelosContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <!-- Tarjeta 1 -->
+    <div id="vuelo1" class="tarjeta rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+        <img id="imagen1" class="tarjeta-img w-full h-56 object-cover" src="MULTIMEDIA/pekin.jpeg" alt="Imagen del producto">
+        <div class="tarjeta-contenido">
+            <div id="nombre1" class="font-bold text-xl mb-2 text-gray-800">Nombre del Producto 1</div>
+            <p id="descripcion1" class="text-gray-600 text-base">Descripción del producto 1...</p>
+            <p id="precio1" class="text-gray-900 font-semibold text-lg mt-2">$100</p>
+            <button class="boton-comprar bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Comprar</button>
+        </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div id="vuelo2" class="tarjeta rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+        <img id="imagen2" class="tarjeta-img w-full h-56 object-cover" src="MULTIMEDIA/london.jpeg" alt="Imagen del producto">
+        <div class="tarjeta-contenido">
+            <div id="nombre2" class="font-bold text-xl mb-2 text-gray-800">Nombre del Producto 2</div>
+            <p id="descripcion2" class="text-gray-600 text-base">Descripción del producto 2...</p>
+            <p id="precio2" class="text-gray-900 font-semibold text-lg mt-2">$120</p>
+            <button class="boton-comprar bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Comprar</button>
+        </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div id="vuelo3" class="tarjeta rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+        <img id="imagen3" class="tarjeta-img w-full h-56 object-cover" src="MULTIMEDIA/paris.jpeg" alt="Imagen del producto">
+        <div class="tarjeta-contenido">
+            <div id="nombre3" class="font-bold text-xl mb-2 text-gray-800">Nombre del Producto 3</div>
+            <p id="descripcion3" class="text-gray-600 text-base">Descripción del producto 3...</p>
+            <p id="precio3" class="text-gray-900 font-semibold text-lg mt-2">$90</p>
+            <button class="boton-comprar bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Comprar</button>
+        </div>
+    </div>
+
+    <!-- Tarjeta 4 -->
+    <div id="vuelo4" class="tarjeta rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+        <img id="imagen4" class="tarjeta-img w-full h-56 object-cover" src="MULTIMEDIA/khalifa.jpg" alt="Imagen del producto">
+        <div class="tarjeta-contenido">
+            <div id="nombre4" class="font-bold text-xl mb-2 text-gray-800">Nombre del Producto 4</div>
+            <p id="descripcion4" class="text-gray-600 text-base">Descripción del producto 4...</p>
+            <p id="precio4" class="text-gray-900 font-semibold text-lg mt-2">$80</p>
+            <button class="boton-comprar bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Comprar</button>
+        </div>
+    </div>
+
+    <!-- Tarjeta 5 -->
+    <div id="vuelo5" class="tarjeta rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+        <img id="imagen5" class="tarjeta-img w-full h-56 object-cover" src="MULTIMEDIA/cdmx.jpg" alt="Imagen del producto">
+        <div class="tarjeta-contenido">
+            <div id="nombre5" class="font-bold text-xl mb-2 text-gray-800">Nombre del Producto 5</div>
+            <p id="descripcion5" class="text-gray-600 text-base">Descripción del producto 5...</p>
+            <p id="precio5" class="text-gray-900 font-semibold text-lg mt-2">$110</p>
+            <button class="boton-comprar bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Comprar</button>
+        </div>
+    </div>
+
+    <!-- Tarjeta 6 -->
+    <div id="vuelo6" class="tarjeta rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+        <img id="imagen6" class="tarjeta-img w-full h-56 object-cover" src="MULTIMEDIA/bogota.jpg" alt="Imagen del producto">
+        <div class="tarjeta-contenido">
+            <div id="nombre6" class="font-bold text-xl mb-2 text-gray-800">Nombre del Producto 6</div>
+            <p id="descripcion6" class="text-gray-600 text-base">Descripción del producto 6...</p>
+            <p id="precio6" class="text-gray-900 font-semibold text-lg mt-2">$95</p>
+            <button class="boton-comprar bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Comprar</button>
+        </div>
+    </div>
+
+    <!-- Tarjeta 7 -->
+    <div id="vuelo7" class="tarjeta rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+        <img id="imagen7" class="tarjeta-img w-full h-56 object-cover" src="MULTIMEDIA/cdmx.jpg" alt="Imagen del producto">
+        <div class="tarjeta-contenido">
+            <div id="nombre7" class="font-bold text-xl mb-2 text-gray-800">Nombre del Producto 7</div>
+            <p id="descripcion7" class="text-gray-600 text-base">Descripción del producto 7...</p>
+            <p id="precio7" class="text-gray-900 font-semibold text-lg mt-2">$95</p>
+            <button class="boton-comprar bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Comprar</button>
+        </div>
+    </div>
+
+    <!-- Tarjeta 8 -->
+    <div id="vuelo8" class="tarjeta rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+        <img id="imagen8" class="tarjeta-img w-full h-56 object-cover" src="MULTIMEDIA/khalifa.jpg" alt="Imagen del producto">
+        <div class="tarjeta-contenido">
+            <div id="nombre8" class="font-bold text-xl mb-2 text-gray-800">Nombre del Producto 8</div>
+            <p id="descripcion8" class="text-gray-600 text-base">Descripción del producto 8...</p>
+            <p id="precio8" class="text-gray-900 font-semibold text-lg mt-2">$85</p>
+            <button class="boton-comprar bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Comprar</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Hacer una solicitud a la API PHP para obtener los datos de los vuelos
+    fetch('http://localhost/Apis/laprueba.php')
+        .then(response => response.json())
+        .then(data => {
+            // Actualizar la información de las tarjetas con los datos obtenidos
+            data.forEach((vuelo, index) => {
+                const numTarjeta = index + 1;
+                document.getElementById(`nombre${numTarjeta}`).textContent = vuelo.Destino;
+                document.getElementById(`descripcion${numTarjeta}`).textContent = vuelo.Descripcion;
+                document.getElementById(`precio${numTarjeta}`).textContent = `$${vuelo.Precio}`;
+                document.getElementById(`imagen${numTarjeta}`).src = `MULTIMEDIA/${vuelo.Imagen}`;
+            });
+        })
+        .catch(error => {
+            console.error('Error al obtener datos de la API:', error);
+        });
+</script>
+
+</body>
+</html>

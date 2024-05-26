@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tarjetas de Destinos</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        .card {
+            width: calc(33.33% - 20px); /* Ajustar el ancho para tres tarjetas por fila */
+            margin: 10px;
+            display: inline-block;
+            vertical-align: top;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content" class="text-center"></div>
+
+    <script>
+        // Realizar una solicitud HTTP GET a tu API
+        fetch('http://localhost/Apis/primera.php')
+            .then(response => response.json())
+            .then(data => {
+                // Obtener el elemento content
+                var content = document.getElementById('content');
+
+                // Recorrer los datos y crear una tarjeta para cada destino
+                data.forEach(destino => {
+                    var card = document.createElement('div');
+                    card.className = 'card';
+
+                    // Contenido de la tarjeta
+                    card.innerHTML = `
+                        <img src="https://th.bing.com/th/id/OIP.thvfr5Ew4vTdsuCoaROyQQHaE8?rs=1&pid=ImgDetMain" alt="${destino.Destino}">
+                        <div class="card-content">
+                            <p>Precio: ${destino.Precio}</p>
+                            <h2>${destino.Destino}</h2>
+                            <p>${destino.Descripcion}</p>
+                        </div>
+                    `;
+                    
+                    // Agregar la tarjeta al contenedor
+                    content.appendChild(card);
+                });
+            });
+    </script>
+</body>
+</html>
